@@ -56,4 +56,49 @@ iter **=5 # возведение в степень
 a = 1 < 3 < 5 < 10
 print(a)
 
+# Условия в python
+
+username = input("Введите ваше имя: ")
+if username == 'Maria':
+    print("Goodluck Manya")
+elif username == 'Kolya':
+    print("Hey hey Kolyan")
+elif username == 'Frodya':
+    print("Hi Frodya")
+else:
+    print("Hello" , username)    
+
+# Циклы while and for
+
+n = 423
+sum = 0
+while n > 0:
+    x = n % 10
+    sum += x
+    n //= 10
+print(sum)  
+
+i = 0
+while i < 5:
+    if i == 3:
+        break  # break как аналог return он останавливает все операции и переходит к print(i)
+    i+=1
+else:
+    print('Пожалуй')
+    print ('хватит')
+print(i)
+
+
+# Метод флажка
+
+n = int(input())
+flag = True
+while flag:
+    if n % i == 0: # если остаток при делении числа n на i равен 0
+        flag = False
+        print (i)
+    elif i > n//2: # делитель числа не может быть превышать введенное число, деленное на 2 
+        print(n)
+        flag = False
+    i += 1        
 
