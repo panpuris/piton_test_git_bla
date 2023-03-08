@@ -102,3 +102,38 @@ while flag:
         flag = False
     i += 1        
 
+
+# Циклы for & range
+
+r = range (5) # 0 1 2 3 4 5
+r = range (2,5) # 2 3 4
+r = range (0,-5) #----
+r = range (1,10,2) #1 3 5 7 9 (здесь получается 1 число начальная точка, 
+#второе число конечная точка (которая не печатается)
+#третье число это шаг с которым будут выводиться числа 
+r = range (100, 0, -20) # 100 80 60 40 20
+for i in r:
+    print (i)
+
+
+a = ' qwerty '
+for i in a:
+    print (i)
+
+# For in for
+line = ""
+for i in range(5):
+    line = ""
+    for j in range (5):
+        line += "*"
+        print(line)
+
+# Первые функции
+text = 'СъЕшь еще этих МягКих ФраНцузских булок'        
+print (len(text)) # функция len показывает длинну (текста,строки,массива и тд)
+print ('еще' in text) # проверка есть ли слово еще в строке
+print (text.lower()) # lower все маленькими буквами
+print (text.upper()) # upper все крупными буквами
+print (text.replace('еще', 'ЕЩЕ')) # replace замена одного на другое
+
+
