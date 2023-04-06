@@ -150,3 +150,5 @@ print(text[6:-18])  # отрицательная индексация начин
 print(text[::6])
 text = text[2:9] + text[-5] + text[:2]
 print(text)
+
+#тестовый 
